@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Create a website for St Martin School.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- School crest/logo in a classic academic style with a green-and-cream palette (st-martin-crest.dim_512x512.png)\n- Homepage hero illustration of a welcoming school building/campus in a warm, classic academic style (st-martin-hero.dim_1600x900.png)\n- Seamless subtle background pattern (e.g., shield/leaf motifs) in light cream/green (st-martin-pattern.dim_1024x1024.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-responsive-multi-page-school-website-for-st-martin-school-with-a-top-navigation-and-footer-including-these-pages-sections-home-about-academics-admissions-news-events-contact",
+      "title": "Create a responsive multi-page school website for “St Martin School” with a top navigation and footer, including these pages/sections: Home, About, Academics, Admissions, News & Events, Contact.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-home-page-content-blocks-suitable-for-a-school-website-hero-section-headline-short-description-primary-call-to-action-3-4-highlights-e-g-academic-excellence-student-life-values-community-and-a-preview-strip-for-upcoming-events-news",
+      "title": "Implement Home page content blocks suitable for a school website: hero section (headline + short description + primary call-to-action), 3–4 highlights (e.g., Academic Excellence, Student Life, Values, Community), and a preview strip for upcoming events/news.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-about-page-content-structure-with-placeholders-school-overview-mission-values-leadership-staff-teaser-and-a-simple-timeline-or-milestones-section",
+      "title": "Create About page content structure with placeholders: school overview, mission & values, leadership/staff teaser, and a simple timeline or milestones section.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-academics-page-content-structure-with-placeholders-grade-levels-or-departments-curriculum-overview-extracurriculars-clubs-and-facilities-resources",
+      "title": "Create Academics page content structure with placeholders: grade levels (or departments), curriculum overview, extracurriculars/clubs, and facilities/resources.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-admissions-page-content-structure-with-placeholders-how-to-apply-steps-requirements-tuition-fees-placeholder-optional-and-faq-accordion",
+      "title": "Create Admissions page content structure with placeholders: how to apply steps, requirements, tuition/fees placeholder (optional), and FAQ accordion.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-news-events-page-that-lists-sample-news-posts-and-events-static-seed-data-on-the-frontend-with-a-simple-filter-toggle-all-news-events-and-detail-view-or-expandable-cards",
+      "title": "Create News & Events page that lists sample news posts and events (static seed data on the frontend), with a simple filter toggle (All / News / Events) and detail view or expandable cards.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-contact-page-with-a-form-name-email-subject-message-that-submits-to-the-backend-and-shows-success-error-states-also-show-school-contact-info-placeholders-address-phone-email-office-hours",
+      "title": "Implement a Contact page with a form (name, email, subject, message) that submits to the backend and shows success/error states; also show school contact info placeholders (address, phone, email, office hours).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-establish-a-coherent-visual-theme-for-st-martin-school-and-apply-it-consistently-across-pages-colors-typography-spacing-buttons-cards-choose-a-classic-academic-look-using-warm-neutrals-and-deep-greens-avoid-blue-purple",
+      "title": "Establish a coherent visual theme for St Martin School and apply it consistently across pages (colors, typography, spacing, buttons, cards). Choose a classic, academic look using warm neutrals and deep greens (avoid blue/purple).",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-generated-image-assets-logo-crest-and-homepage-hero-illustration-to-the-frontend-as-static-files-under-frontend-public-assets-generated-and-use-them-in-the-layout-header-branding-and-homepage-hero",
+      "title": "Add generated image assets (logo/crest and homepage hero illustration) to the frontend as static files under frontend/public/assets/generated and use them in the layout (header branding and homepage hero).",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Build a website for St Martin School.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Add a backend data model for storing contact form submissions (name, email, subject, message, createdAt) and expose methods to create a submission and optionally list recent submissions for debugging/admin use (no public UI required for listing).",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "St Martin School",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

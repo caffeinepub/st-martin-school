@@ -1,0 +1,15 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup defining all routes (Home, About, Academics, Admissions, News & Events, Contact) wrapped in a shared SiteLayout component.",
+  "frontend/src/components/SiteLayout.tsx": "Shared layout component that renders the site header, main content area with router outlet, and footer consistently across all pages.",
+  "frontend/src/components/SiteHeader.tsx": "Responsive header component with school branding (crest logo and name), desktop navigation menu, and mobile hamburger menu using Sheet component.",
+  "frontend/src/components/SiteFooter.tsx": "Footer component displaying school branding, quick navigation links, contact information, and attribution with caffeine.ai link.",
+  "frontend/src/pages/HomePage.tsx": "Home page featuring hero section with school image, four highlight cards showcasing school values, news/events preview section, and call-to-action for admissions.",
+  "frontend/src/pages/AboutPage.tsx": "About page with school overview, mission statement, core values cards, leadership team information, and historical timeline with milestones.",
+  "frontend/src/pages/AcademicsPage.tsx": "Academics page displaying grade level programs, curriculum subjects with icons, extracurricular activities list, and facilities/resources information.",
+  "frontend/src/pages/AdmissionsPage.tsx": "Admissions page with step-by-step application process, requirements checklist, tuition/financial aid information, and FAQ accordion component.",
+  "frontend/src/pages/NewsEventsPage.tsx": "News & Events page with filter tabs (All/News/Events), expandable collapsible cards for each item showing full content when opened.",
+  "frontend/src/pages/ContactPage.tsx": "Contact page with validated contact form that submits to backend, displays success/error states, and shows school contact information cards.",
+  "frontend/src/content/newsEventsSeed.ts": "Static seed data file containing sample news posts and events with titles, dates, categories, excerpts, and full content for display throughout the site.",
+  "frontend/src/index.css": "Global styles with OKLCH color system defining warm neutral backgrounds and deep forest green primary colors for a classic academic aesthetic in both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the theme with custom color tokens, typography settings, and design system values for consistent styling."
+}

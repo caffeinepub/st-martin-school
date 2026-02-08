@@ -1,0 +1,203 @@
+{
+  "kind": "build_request",
+  "title": "St Martin School informational website",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a responsive multi-page school website for “St Martin School” with a top navigation and footer, including these pages/sections: Home, About, Academics, Admissions, News & Events, Contact.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Create a website for school name st Martin school"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Site renders with clear branding for “St Martin School”.",
+        "Navigation works on desktop and mobile (hamburger menu on small screens).",
+        "Each required page/section is reachable from the main navigation.",
+        "Footer includes school name and basic quick links (nav links)."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement Home page content blocks suitable for a school website: hero section (headline + short description + primary call-to-action), 3–4 highlights (e.g., Academic Excellence, Student Life, Values, Community), and a preview strip for upcoming events/news.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Create a website for school name st Martin school"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Home page includes a hero with headline and supporting text in English.",
+        "Home page includes 3–4 highlight cards/tiles.",
+        "Home page includes a small preview area linking to News & Events."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Create About page content structure with placeholders: school overview, mission & values, leadership/staff teaser, and a simple timeline or milestones section.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Create a website for school name st Martin school"
+        ]
+      },
+      "acceptanceCriteria": [
+        "About page contains clearly labeled sections for overview, mission/values, leadership/staff, and timeline/milestones.",
+        "All user-facing text is in English."
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create Academics page content structure with placeholders: grade levels (or departments), curriculum overview, extracurriculars/clubs, and facilities/resources.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Create a website for school name st Martin school"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Academics page contains distinct sections for grade levels/departments, curriculum, extracurriculars, and facilities/resources."
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Create Admissions page content structure with placeholders: how to apply steps, requirements, tuition/fees placeholder (optional), and FAQ accordion.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Create a website for school name st Martin school"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Admissions page includes an ordered “How to apply” step list.",
+        "Admissions page includes an FAQ accordion component with at least 4 questions/answers placeholders."
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Create News & Events page that lists sample news posts and events (static seed data on the frontend), with a simple filter toggle (All / News / Events) and detail view or expandable cards.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Create a website for school name st Martin school"
+        ]
+      },
+      "acceptanceCriteria": [
+        "News & Events page shows a list of items with dates and categories (News/Event).",
+        "User can filter between All/News/Events.",
+        "User can open an item to view more details (detail page or expand-in-place)."
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Implement a Contact page with a form (name, email, subject, message) that submits to the backend and shows success/error states; also show school contact info placeholders (address, phone, email, office hours).",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Create a website for school name st Martin school"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Contact form validates required fields and email format.",
+        "On submit, the form calls a backend method and shows a success message when saved.",
+        "On backend failure, an error message is shown and the user can retry.",
+        "Contact page displays placeholders for address, phone, email, and office hours."
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Add a backend data model for storing contact form submissions (name, email, subject, message, createdAt) and expose methods to create a submission and optionally list recent submissions for debugging/admin use (no public UI required for listing).",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Create a website for school name st Martin school"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend provides an update method to store a contact submission with a timestamp.",
+        "Backend persists submissions across canister upgrades using stable storage patterns appropriate for Motoko.",
+        "A query method exists to retrieve recent submissions (e.g., last N) for verification/testing."
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Establish a coherent visual theme for St Martin School and apply it consistently across pages (colors, typography, spacing, buttons, cards). Choose a classic, academic look using warm neutrals and deep greens (avoid blue/purple).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Create a website for school name st Martin school"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Theme is consistent across all pages (same heading styles, button styles, card styles).",
+        "Primary palette is not blue/purple.",
+        "UI looks polished on mobile and desktop."
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Add generated image assets (logo/crest and homepage hero illustration) to the frontend as static files under frontend/public/assets/generated and use them in the layout (header branding and homepage hero).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Create a website for school name st Martin school"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Generated images exist in frontend/public/assets/generated with the specified filenames.",
+        "Header displays the school logo/crest image.",
+        "Home hero section uses the hero illustration image responsively (no layout shift, appropriate object-fit)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Use English for all user-facing text.",
+    "Do not modify files in frontend/src/components/ui or other immutable paths; compose them instead.",
+    "Backend must remain a single Motoko actor (no additional backend services)."
+  ],
+  "nonGoals": [
+    "Student/parent portals, logins, or role-based admin dashboards.",
+    "Real-time chat, push notifications, or third-party auth providers beyond Internet Identity.",
+    "External database or third-party CMS integration."
+  ],
+  "imageRequirements": {
+    "required": [
+      "School crest/logo in a classic academic style with a green-and-cream palette (st-martin-crest.dim_512x512.png)",
+      "Homepage hero illustration of a welcoming school building/campus in a warm, classic academic style (st-martin-hero.dim_1600x900.png)",
+      "Seamless subtle background pattern (e.g., shield/leaf motifs) in light cream/green (st-martin-pattern.dim_1024x1024.png)"
+    ],
+    "edits": []
+  }
+}

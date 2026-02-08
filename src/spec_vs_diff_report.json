@@ -1,0 +1,69 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-08T12:59:17.378Z",
+  "summary": "Most frontend page structure and navigation appears implemented (routes, header with mobile hamburger, footer, themed styling, page content blocks, News & Events filtering with expandable items, and Contact form UI wired to a backend call). Key gaps are in backend persistence/stable storage for contact submissions and lack of evidence that the required generated image assets were added under the specified public path. Some unrequested authentication/Internet Identity infrastructure and attribution footer content were added.",
+  "missing_requirements": [
+    {
+      "id": "REQ-8",
+      "requirement": "Backend persists contact submissions across canister upgrades using stable storage patterns appropriate for Motoko; provide update method to store with timestamp and a query method to retrieve recent submissions.",
+      "reason": "The backend stores submissions in a non-stable `let submissions = List.empty<...>()` with no stable variable or preupgrade/postupgrade handling shown. Also `getRecentSubmissions` is declared `shared` (not query) in the diff summary, and the storage API usage shown does not evidence persistence across upgrades.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "requirement": "Add generated image assets (crest/logo and homepage hero illustration) as static files under frontend/public/assets/generated with specified filenames, and use them in header and homepage hero.",
+      "reason": "Code references the required filenames/paths, but the diff summary does not include any added files under `frontend/public/assets/generated` and notes that 2 added files were omitted due to limits without identifying them. There is insufficient evidence that the images themselves were added in the required directory.",
+      "evidence": [
+        "frontend/src/components/SiteHeader.tsx",
+        "frontend/src/components/SiteFooter.tsx",
+        "frontend/src/pages/HomePage.tsx"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Internet Identity authentication context and actor-creation logic (useInternetIdentity/useActor) added even though no authentication/login functionality was requested for an informational website.",
+      "reason": "BuildRequest non-goals explicitly avoid portals/logins; while II is allowed, it is not requested/required for the site requirements and adds extra auth infrastructure beyond the informational site scope.",
+      "evidence": [
+        "frontend/src/main.tsx",
+        "frontend/src/hooks/useInternetIdentity.ts",
+        "frontend/src/hooks/useActor.ts"
+      ]
+    },
+    {
+      "description": "Footer includes 'Built with caffeine.ai' attribution and external link.",
+      "reason": "Not requested in any requirement or acceptance criteria; footer was only required to include school name and quick links.",
+      "evidence": [
+        "frontend/src/components/SiteFooter.tsx"
+      ]
+    }
+  ],
+  "confidence": 0.72,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/SiteFooter.tsx",
+    "frontend/src/components/SiteHeader.tsx",
+    "frontend/src/components/SiteLayout.tsx",
+    "frontend/src/content/newsEventsSeed.ts",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/pages/AboutPage.tsx",
+    "frontend/src/pages/AcademicsPage.tsx",
+    "frontend/src/pages/AdmissionsPage.tsx",
+    "frontend/src/pages/ContactPage.tsx",
+    "frontend/src/pages/HomePage.tsx",
+    "frontend/src/pages/NewsEventsPage.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

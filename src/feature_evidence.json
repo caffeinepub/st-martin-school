@@ -1,0 +1,181 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-responsive-multi-page-school-website-for-st-martin-school-with-a-top-navigation-and-footer-including-these-pages-sections-home-about-academics-admissions-news-events-contact",
+      "featureTitle": "Create a responsive multi-page school website for “St Martin School” with a top navigation and footer, including these pages/sections: Home, About, Academics, Admissions, News & Events, Contact.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/SiteFooter.tsx",
+        "frontend/src/components/SiteHeader.tsx",
+        "frontend/src/components/SiteLayout.tsx",
+        "frontend/src/pages/AboutPage.tsx",
+        "frontend/src/pages/AcademicsPage.tsx",
+        "frontend/src/pages/AdmissionsPage.tsx",
+        "frontend/src/pages/ContactPage.tsx",
+        "frontend/src/pages/HomePage.tsx",
+        "frontend/src/pages/NewsEventsPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-home-page-content-blocks-suitable-for-a-school-website-hero-section-headline-short-description-primary-call-to-action-3-4-highlights-e-g-academic-excellence-student-life-values-community-and-a-preview-strip-for-upcoming-events-news",
+      "featureTitle": "Implement Home page content blocks suitable for a school website: hero section (headline + short description + primary call-to-action), 3–4 highlights (e.g., Academic Excellence, Student Life, Values, Community), and a preview strip for upcoming events/news.",
+      "files": [
+        "frontend/src/content/newsEventsSeed.ts",
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-about-page-content-structure-with-placeholders-school-overview-mission-values-leadership-staff-teaser-and-a-simple-timeline-or-milestones-section",
+      "featureTitle": "Create About page content structure with placeholders: school overview, mission & values, leadership/staff teaser, and a simple timeline or milestones section.",
+      "files": [
+        "frontend/src/pages/AboutPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-academics-page-content-structure-with-placeholders-grade-levels-or-departments-curriculum-overview-extracurriculars-clubs-and-facilities-resources",
+      "featureTitle": "Create Academics page content structure with placeholders: grade levels (or departments), curriculum overview, extracurriculars/clubs, and facilities/resources.",
+      "files": [
+        "frontend/src/pages/AcademicsPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-admissions-page-content-structure-with-placeholders-how-to-apply-steps-requirements-tuition-fees-placeholder-optional-and-faq-accordion",
+      "featureTitle": "Create Admissions page content structure with placeholders: how to apply steps, requirements, tuition/fees placeholder (optional), and FAQ accordion.",
+      "files": [
+        "frontend/src/pages/AdmissionsPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-news-events-page-that-lists-sample-news-posts-and-events-static-seed-data-on-the-frontend-with-a-simple-filter-toggle-all-news-events-and-detail-view-or-expandable-cards",
+      "featureTitle": "Create News & Events page that lists sample news posts and events (static seed data on the frontend), with a simple filter toggle (All / News / Events) and detail view or expandable cards.",
+      "files": [
+        "frontend/src/content/newsEventsSeed.ts",
+        "frontend/src/pages/NewsEventsPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-contact-page-with-a-form-name-email-subject-message-that-submits-to-the-backend-and-shows-success-error-states-also-show-school-contact-info-placeholders-address-phone-email-office-hours",
+      "featureTitle": "Implement a Contact page with a form (name, email, subject, message) that submits to the backend and shows success/error states; also show school contact info placeholders (address, phone, email, office hours).",
+      "files": [
+        "frontend/src/pages/ContactPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-establish-a-coherent-visual-theme-for-st-martin-school-and-apply-it-consistently-across-pages-colors-typography-spacing-buttons-cards-choose-a-classic-academic-look-using-warm-neutrals-and-deep-greens-avoid-blue-purple",
+      "featureTitle": "Establish a coherent visual theme for St Martin School and apply it consistently across pages (colors, typography, spacing, buttons, cards). Choose a classic, academic look using warm neutrals and deep greens (avoid blue/purple).",
+      "files": [
+        "frontend/src/components/SiteLayout.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-generated-image-assets-logo-crest-and-homepage-hero-illustration-to-the-frontend-as-static-files-under-frontend-public-assets-generated-and-use-them-in-the-layout-header-branding-and-homepage-hero",
+      "featureTitle": "Add generated image assets (logo/crest and homepage hero illustration) to the frontend as static files under frontend/public/assets/generated and use them in the layout (header branding and homepage hero).",
+      "files": [
+        "frontend/src/components/SiteHeader.tsx",
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

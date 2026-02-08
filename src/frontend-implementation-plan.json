@@ -1,0 +1,239 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "St Martin School informational website (frontend)",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Build a responsive multi-page site shell with top navigation and footer, and routes for Home, About, Academics, Admissions, News & Events, Contact.",
+      "acceptanceCriteria": [
+        "Site renders with clear branding for “St Martin School”.",
+        "Navigation works on desktop and mobile (hamburger menu on small screens).",
+        "Each required page/section is reachable from the main navigation.",
+        "Footer includes school name and basic quick links (nav links)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "create",
+          "description": "Create the main app component with client-side routing for Home, About, Academics, Admissions, News & Events, and Contact pages, wrapped in a shared layout that includes the top navigation and footer. Use the core-infrastructure setup already present (React entry point and backend connection conventions). Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/SiteLayout.tsx",
+          "operation": "create",
+          "description": "Create a shared page layout component that renders the header (top nav), main content container, and footer consistently across all routes. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/SiteHeader.tsx",
+          "operation": "create",
+          "description": "Implement a responsive top navigation with desktop links and a mobile hamburger menu. Use shadcn-ui components (e.g., Button + Sheet/Drawer-style component if available) to support the hamburger navigation. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/SiteFooter.tsx",
+          "operation": "create",
+          "description": "Implement a footer showing “St Martin School” and quick links that mirror main navigation. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "create",
+          "description": "Create the Home page route component and ensure it is reachable from the main navigation. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/pages/AboutPage.tsx",
+          "operation": "create",
+          "description": "Create the About page route component and ensure it is reachable from the main navigation. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/pages/AcademicsPage.tsx",
+          "operation": "create",
+          "description": "Create the Academics page route component and ensure it is reachable from the main navigation. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/pages/AdmissionsPage.tsx",
+          "operation": "create",
+          "description": "Create the Admissions page route component and ensure it is reachable from the main navigation. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/pages/NewsEventsPage.tsx",
+          "operation": "create",
+          "description": "Create the News & Events page route component and ensure it is reachable from the main navigation. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/pages/ContactPage.tsx",
+          "operation": "create",
+          "description": "Create the Contact page route component and ensure it is reachable from the main navigation. Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Implement the Home page hero, highlights, and a News/Events preview strip that links to the News & Events page.",
+      "acceptanceCriteria": [
+        "Home page includes a hero with headline and supporting text in English.",
+        "Home page includes 3–4 highlight cards/tiles.",
+        "Home page includes a small preview area linking to News & Events."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Add Home page content blocks: hero (headline, short description, primary call-to-action linking to Admissions or Contact), 3–4 highlights (use shadcn-ui Card components if available), and a preview strip showing a few upcoming items linking to News & Events. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/content/newsEventsSeed.ts",
+          "operation": "create",
+          "description": "Add static seed data for sample news posts and events (titles, dates, category, short/long descriptions) used by the Home preview and News & Events listing. Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Create an About page with labeled placeholder sections for overview, mission/values, leadership/staff, and timeline/milestones.",
+      "acceptanceCriteria": [
+        "About page contains clearly labeled sections for overview, mission/values, leadership/staff, and timeline/milestones.",
+        "All user-facing text is in English."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/AboutPage.tsx",
+          "operation": "modify",
+          "description": "Implement clearly labeled About sections with English placeholder copy: School Overview, Mission & Values, Leadership/Staff teaser, and a simple Timeline/Milestones list (static placeholders). Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Create an Academics page with placeholder sections for grade levels/departments, curriculum, extracurriculars/clubs, and facilities/resources.",
+      "acceptanceCriteria": [
+        "Academics page contains distinct sections for grade levels/departments, curriculum, extracurriculars, and facilities/resources."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/AcademicsPage.tsx",
+          "operation": "modify",
+          "description": "Implement distinct Academics sections with English placeholder content: grade levels/departments, curriculum overview, extracurriculars/clubs, and facilities/resources. Consider using shadcn-ui Card/Separator components if available. Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Create an Admissions page with apply steps, requirements, optional tuition/fees placeholder, and an FAQ accordion.",
+      "acceptanceCriteria": [
+        "Admissions page includes an ordered “How to apply” step list.",
+        "Admissions page includes an FAQ accordion component with at least 4 questions/answers placeholders."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/AdmissionsPage.tsx",
+          "operation": "modify",
+          "description": "Add Admissions placeholders: ordered “How to apply” step list, requirements list, tuition/fees placeholder section, and an FAQ accordion with at least 4 Q/A items. Use shadcn-ui Accordion component to implement the FAQ. Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Implement a News & Events page with static seed data, All/News/Events filter toggle, and an item detail view via expandable cards.",
+      "acceptanceCriteria": [
+        "News & Events page shows a list of items with dates and categories (News/Event).",
+        "User can filter between All/News/Events.",
+        "User can open an item to view more details (detail page or expand-in-place)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/NewsEventsPage.tsx",
+          "operation": "modify",
+          "description": "Render the seed items list with date and category badges, add a simple filter toggle (All/News/Events) and expandable cards for details. Use shadcn-ui components (e.g., Tabs/ToggleGroup/Badge/Card/Collapsible if available) to keep styling consistent. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/content/newsEventsSeed.ts",
+          "operation": "modify",
+          "description": "Ensure seed items include fields needed for filtering and expanded details (category, date, excerpt, full content). Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Build a Contact page with validation and backend submission, including success/error states and contact info placeholders.",
+      "acceptanceCriteria": [
+        "Contact form validates required fields and email format.",
+        "On submit, the form calls a backend method and shows a success message when saved.",
+        "On backend failure, an error message is shown and the user can retry.",
+        "Contact page displays placeholders for address, phone, email, and office hours."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/ContactPage.tsx",
+          "operation": "modify",
+          "description": "Implement the contact form (name, email, subject, message) with client-side validation (required fields + email format), call the backend method submitContactForm, and display success/error states with retry. Also render contact info placeholders (address, phone, email, office hours). Use shadcn-ui Form/Input/Textarea/Button/Alert components if available. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/services/contactSubmissions.ts",
+          "operation": "create",
+          "description": "Create a small frontend service wrapper that calls the backend interface method submitContactForm and returns a typed result used by ContactPage. Keep implementation aligned with the project's core-infrastructure backend connection patterns. Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Apply a consistent warm-neutral + deep-green academic visual theme across the site (no blue/purple primary palette).",
+      "acceptanceCriteria": [
+        "Theme is consistent across all pages (same heading styles, button styles, card styles).",
+        "Primary palette is not blue/purple.",
+        "UI looks polished on mobile and desktop."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "create",
+          "description": "Add global styles and theme tokens (via CSS variables used by Tailwind/shadcn-ui) to establish a warm neutral background and deep green primary/accent, plus consistent typography and spacing defaults. Ensure all user-facing text remains English. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Adjust/extend Tailwind theme (as needed) to support the classic academic look (e.g., container sizing, font family additions, and ensuring primary/secondary map to the deep-green and warm-neutral CSS variables). Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/SiteLayout.tsx",
+          "operation": "modify",
+          "description": "Apply consistent layout spacing and shared section styling (page headings, section spacing, max widths) so all pages look cohesive on mobile and desktop. Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Add generated crest/logo and hero illustration (and subtle pattern) as static assets and use them in header branding and the Home hero.",
+      "acceptanceCriteria": [
+        "Generated images exist in frontend/public/assets/generated with the specified filenames.",
+        "Header displays the school logo/crest image.",
+        "Home hero section uses the hero illustration image responsively (no layout shift, appropriate object-fit)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/st-martin-crest.dim_512x512.png",
+          "operation": "create",
+          "description": "Add the generated St Martin School crest/logo image as a static asset at this exact path/filename so it can be used by the header branding."
+        },
+        {
+          "path": "frontend/public/assets/generated/st-martin-hero.dim_1600x900.png",
+          "operation": "create",
+          "description": "Add the generated homepage hero illustration as a static asset at this exact path/filename for responsive use in the Home hero."
+        },
+        {
+          "path": "frontend/public/assets/generated/st-martin-pattern.dim_1024x1024.png",
+          "operation": "create",
+          "description": "Add the generated subtle background pattern as a static asset at this exact path/filename for optional use in page backgrounds/sections."
+        },
+        {
+          "path": "frontend/src/components/SiteHeader.tsx",
+          "operation": "modify",
+          "description": "Wire in the crest image from frontend/public/assets/generated/st-martin-crest.dim_512x512.png as the header brand mark alongside “St Martin School”. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Use the hero illustration from frontend/public/assets/generated/st-martin-hero.dim_1600x900.png in the hero section with responsive sizing and appropriate object-fit to avoid layout shift. Optionally incorporate frontend/public/assets/generated/st-martin-pattern.dim_1024x1024.png as a subtle background treatment while maintaining readability. Verify the component's usage instructions before implementing."
+        }
+      ]
+    }
+  ]
+}

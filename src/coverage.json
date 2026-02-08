@@ -1,0 +1,267 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-08T12:59:17.381Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 10,
+    "implemented": 9,
+    "items": [
+      {
+        "id": "REQ-1",
+        "summary": "Create a responsive multi-page school website for “St Martin School” with a top navigation and footer, including these pages/sections: Home, About, Academics, Admissions, News & Events, Contact.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/components/SiteLayout.tsx",
+          "frontend/src/components/SiteHeader.tsx",
+          "frontend/src/components/SiteFooter.tsx",
+          "frontend/src/pages/HomePage.tsx",
+          "frontend/src/pages/AboutPage.tsx",
+          "frontend/src/pages/AcademicsPage.tsx",
+          "frontend/src/pages/AdmissionsPage.tsx",
+          "frontend/src/pages/NewsEventsPage.tsx",
+          "frontend/src/pages/ContactPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/components/SiteLayout.tsx",
+          "frontend/src/components/SiteHeader.tsx",
+          "frontend/src/components/SiteFooter.tsx",
+          "frontend/src/pages/HomePage.tsx",
+          "frontend/src/pages/AboutPage.tsx",
+          "frontend/src/pages/AcademicsPage.tsx",
+          "frontend/src/pages/AdmissionsPage.tsx",
+          "frontend/src/pages/NewsEventsPage.tsx",
+          "frontend/src/pages/ContactPage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-10",
+        "summary": "Add generated image assets (logo/crest and homepage hero illustration) to the frontend as static files under frontend/public/assets/generated and use them in the layout (header branding and homepage hero).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/public/assets/generated/st-martin-crest.dim_512x512.png",
+          "frontend/public/assets/generated/st-martin-hero.dim_1600x900.png",
+          "frontend/public/assets/generated/st-martin-pattern.dim_1024x1024.png",
+          "frontend/src/components/SiteHeader.tsx",
+          "frontend/src/pages/HomePage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/public/assets/generated/st-martin-crest.dim_512x512.png",
+          "frontend/public/assets/generated/st-martin-hero.dim_1600x900.png",
+          "frontend/public/assets/generated/st-martin-pattern.dim_1024x1024.png",
+          "frontend/src/components/SiteHeader.tsx",
+          "frontend/src/pages/HomePage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-2",
+        "summary": "Implement Home page content blocks suitable for a school website: hero section (headline + short description + primary call-to-action), 3–4 highlights (e.g., Academic Excellence, Student Life, Values, Community), and a preview strip for upcoming events/news.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/HomePage.tsx",
+          "frontend/src/content/newsEventsSeed.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/HomePage.tsx",
+          "frontend/src/content/newsEventsSeed.ts"
+        ]
+      },
+      {
+        "id": "REQ-3",
+        "summary": "Create About page content structure with placeholders: school overview, mission & values, leadership/staff teaser, and a simple timeline or milestones section.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/AboutPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/AboutPage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-4",
+        "summary": "Create Academics page content structure with placeholders: grade levels (or departments), curriculum overview, extracurriculars/clubs, and facilities/resources.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/AcademicsPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/AcademicsPage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-5",
+        "summary": "Create Admissions page content structure with placeholders: how to apply steps, requirements, tuition/fees placeholder (optional), and FAQ accordion.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/AdmissionsPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/AdmissionsPage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-6",
+        "summary": "Create News & Events page that lists sample news posts and events (static seed data on the frontend), with a simple filter toggle (All / News / Events) and detail view or expandable cards.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/NewsEventsPage.tsx",
+          "frontend/src/content/newsEventsSeed.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/NewsEventsPage.tsx",
+          "frontend/src/content/newsEventsSeed.ts"
+        ]
+      },
+      {
+        "id": "REQ-7",
+        "summary": "Implement a Contact page with a form (name, email, subject, message) that submits to the backend and shows success/error states; also show school contact info placeholders (address, phone, email, office hours).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/ContactPage.tsx",
+          "frontend/src/services/contactSubmissions.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/ContactPage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-8",
+        "summary": "Add a backend data model for storing contact form submissions (name, email, subject, message, createdAt) and expose methods to create a submission and optionally list recent submissions for debugging/admin use (no public UI required for listing).",
+        "status": "unknown",
+        "plannedFiles": [],
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-9",
+        "summary": "Establish a coherent visual theme for St Martin School and apply it consistently across pages (colors, typography, spacing, buttons, cards). Choose a classic, academic look using warm neutrals and deep greens (avoid blue/purple).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js",
+          "frontend/src/components/SiteLayout.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js",
+          "frontend/src/components/SiteLayout.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "build-request.json",
+    "build-template/Dockerfile",
+    "build-template/LICENSE",
+    "build-template/README.md",
+    "build-template/deploy.sh",
+    "build-template/icp.yaml",
+    "build-template/package.json",
+    "build-template/pnpm-lock.yaml",
+    "build-template/pnpm-workspace.yaml",
+    "build-template/scripts/prune-unused-images.js",
+    "build-template/scripts/resize-images.js",
+    "build-template/src/backend/canister.yaml",
+    "build-template/src/backend/system-idl/aaaaa-aa.did",
+    "build-template/src/frontend/canister.yaml",
+    "build-template/src/frontend/components.json",
+    "build-template/src/frontend/env.json",
+    "build-template/src/frontend/eslint-rules/no-bigint-in-query-keys.js",
+    "build-template/src/frontend/eslint-rules/require-internet-identity-provider.js",
+    "build-template/src/frontend/eslint.config.js",
+    "build-template/src/frontend/package.json",
+    "build-template/src/frontend/postcss.config.js",
+    "build-template/src/frontend/src/components/ui/accordion.tsx",
+    "build-template/src/frontend/src/components/ui/alert-dialog.tsx",
+    "build-template/src/frontend/src/components/ui/alert.tsx",
+    "build-template/src/frontend/src/components/ui/aspect-ratio.tsx",
+    "build-template/src/frontend/src/components/ui/avatar.tsx",
+    "build-template/src/frontend/src/components/ui/badge.tsx",
+    "build-template/src/frontend/src/components/ui/breadcrumb.tsx",
+    "build-template/src/frontend/src/components/ui/button.tsx",
+    "build-template/src/frontend/src/components/ui/calendar.tsx",
+    "build-template/src/frontend/src/components/ui/card.tsx",
+    "build-template/src/frontend/src/components/ui/carousel.tsx",
+    "build-template/src/frontend/src/components/ui/chart.tsx",
+    "build-template/src/frontend/src/components/ui/checkbox.tsx",
+    "build-template/src/frontend/src/components/ui/collapsible.tsx",
+    "build-template/src/frontend/src/components/ui/command.tsx",
+    "build-template/src/frontend/src/components/ui/context-menu.tsx",
+    "build-template/src/frontend/src/components/ui/dialog.tsx",
+    "build-template/src/frontend/src/components/ui/drawer.tsx",
+    "build-template/src/frontend/src/components/ui/dropdown-menu.tsx",
+    "build-template/src/frontend/src/components/ui/form.tsx",
+    "build-template/src/frontend/src/components/ui/hover-card.tsx",
+    "build-template/src/frontend/src/components/ui/input-otp.tsx",
+    "build-template/src/frontend/src/components/ui/input.tsx",
+    "build-template/src/frontend/src/components/ui/label.tsx",
+    "build-template/src/frontend/src/components/ui/menubar.tsx",
+    "build-template/src/frontend/src/components/ui/navigation-menu.tsx",
+    "build-template/src/frontend/src/components/ui/pagination.tsx",
+    "build-template/src/frontend/src/components/ui/popover.tsx",
+    "build-template/src/frontend/src/components/ui/progress.tsx",
+    "build-template/src/frontend/src/components/ui/radio-group.tsx",
+    "build-template/src/frontend/src/components/ui/resizable.tsx",
+    "build-template/src/frontend/src/components/ui/scroll-area.tsx",
+    "build-template/src/frontend/src/components/ui/select.tsx",
+    "build-template/src/frontend/src/components/ui/separator.tsx",
+    "build-template/src/frontend/src/components/ui/sheet.tsx",
+    "build-template/src/frontend/src/components/ui/sidebar.tsx",
+    "build-template/src/frontend/src/components/ui/skeleton.tsx",
+    "build-template/src/frontend/src/components/ui/slider.tsx",
+    "build-template/src/frontend/src/components/ui/sonner.tsx",
+    "build-template/src/frontend/src/components/ui/switch.tsx",
+    "build-template/src/frontend/src/components/ui/table.tsx",
+    "build-template/src/frontend/src/components/ui/tabs.tsx",
+    "build-template/src/frontend/src/components/ui/textarea.tsx",
+    "build-template/src/frontend/src/components/ui/toggle-group.tsx",
+    "build-template/src/frontend/src/components/ui/toggle.tsx",
+    "build-template/src/frontend/src/components/ui/tooltip.tsx",
+    "build-template/src/frontend/src/hooks/use-mobile.tsx",
+    "build-template/src/frontend/src/lib/utils.ts",
+    "build-template/src/frontend/tsconfig.json",
+    "build-template/src/frontend/vite.config.js",
+    "build-template/tsconfig.json",
+    "caffeine.lock.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/public/assets/generated/st-martin-crest.dim_512x512.png",
+    "frontend/public/assets/generated/st-martin-hero.dim_1600x900.png",
+    "frontend/public/assets/generated/st-martin-pattern.dim_1024x1024.png",
+    "frontend/src/App.tsx",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/SiteFooter.tsx",
+    "frontend/src/components/SiteHeader.tsx",
+    "frontend/src/components/SiteLayout.tsx",
+    "frontend/src/config.ts",
+    "frontend/src/content/newsEventsSeed.ts",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/pages/AboutPage.tsx",
+    "frontend/src/pages/AcademicsPage.tsx",
+    "frontend/src/pages/AdmissionsPage.tsx",
+    "frontend/src/pages/ContactPage.tsx",
+    "frontend/src/pages/HomePage.tsx",
+    "frontend/src/pages/NewsEventsPage.tsx",
+    "frontend/src/ui-summary.json",
+    "frontend/src/utils/StorageClient.ts",
+    "frontend/tailwind.config.js",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}
